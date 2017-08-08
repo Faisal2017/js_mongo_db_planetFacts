@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+}
+
+.image_container {
+  float: right;
+  width:50%;
+  height:100%;
+}
+
+#planet-pic {
+  margin-top:15px;
+  width: 100%;
+  height: 90%;
+}
+
+button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    margin: 5px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: "Times";
+}
+
+#deleteButton {
+  background-color: red !important;
+}
+
+#picButton {
+  background-color: blue;
+}
+
+
+li {
+  color: white;
+  font-family: arial
+  font-size: 16px
+  ;
+}
+
+.list-container {
+  width: 50%;
+  height:311.5px;
+  background-color: black;
+}
