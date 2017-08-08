@@ -114,12 +114,16 @@ var requestComplete = function() {
 var app = function() {
   var url = "http://localhost:3000/facts";
   makeRequest(url, requestComplete);
+
+  var pictureButton = document.querySelector('#pictureButton');
+  pictureButton.addEventListener('click', function() {
+    window.location.href = "https://twistedsifter.files.wordpress.com/2014/03/nasa-heralds-cosmos-tv-show-reboot-with-amazing-series-of-space-images-2.jpg";
+  });
 }
 
 window.addEventListener('load', app);
 
-// var pictureButton = document.querySelector('#pictureButton');
-// pictureButton.addEventListener('click', redirect);
+
 
 /***/ })
 /******/ ]);
