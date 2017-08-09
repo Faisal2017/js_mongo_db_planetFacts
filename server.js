@@ -34,7 +34,9 @@ MongoClient.connect('mongodb://localhost:27017/planets', function(err, database)
 
   app.get('/oneFact', function(req, res) {
     database.collection('facts').find().toArray(function(err, results) {
-      res.json(results);
+      var indexMax = results.length;
+      var index = Math.floor(Math.random() * indexMax);
+      res.json(results[index]);
     })
   })
 
@@ -51,5 +53,4 @@ app.use(express.static('client/build'));
 
 app.get('/', function(req, res){
   res.sendFile(__dirname + '/client/build/index.html');
-
 });

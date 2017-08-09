@@ -20,7 +20,7 @@ var app = function() {
 
   var pictureButton = document.querySelector('#pictureButton');
   pictureButton.addEventListener('click', function() {
-    window.location.href = "https://twistedsifter.files.wordpress.com/2014/03/nasa-heralds-cosmos-tv-show-reboot-with-amazing-series-of-space-images-2.jpg";
+    document.location.href = "http://coolinterestingstuff.com/wp-content/uploads/2012/07/nasa_-_the_andromeda_galaxy_m31_spyral_galaxy.jpg";
   });
 }
 
